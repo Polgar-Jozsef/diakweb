@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background: url('bg.png') black;
+    font-family: arial;
+    font-size: 100%;
+    color: white;
+}
+a{
+    color: white;
+}
+
+div.clear {
+    clear: both;
+}
+div#wrapper{
+    width: 800px;
+    margin: 20px auto;
+}
+
+header{
+    font-size: 360%;
+    font-weight:  bold;
+    font-family: "trebuchet MS";
+    text-shadow: 2px 2px 2px grey;
+    color: white;
+}
+header span{
+    color: white;
+}
+nav{
+    padding: 10px 0;
+    margin: 20px 0;
+    color: grey;
+    box-shadow: 0px 0px 5px red;
+}
+nav a {
+    color: grey;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: "trebuchet MS";
+}
+
+nav a:first-child {
+    margin-left: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 558px;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 20px 0 0;
+    border-right:  2px dotted white;
+}
+
+aside{
+    width: 200px;
+    float: right;
+    font-size: 80%;
+
+}
+
+section article {
+    margin: 20px;
+
+}
+
+section article h1 {
+margin: 0 0 10px 0;
+font-size: 150%;
+color: white;
+text-shadow: 1px 1px 1px white;
+font-family: "trebuchet MS"; 
+}
+
+section article p {
+    text-align:  justify;
+    color: white;
+    line-height: 140%;
+    font-size: 85%;
+}
+
+figure {
+    padding: 10px;
+    background: grey;
+    margin: 0 0 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    font-style: italic;
+    font-size: 80%;
+    margin:  6px 0 0 0;
+}
+
+footer {
+    width: 760px;
+    margin: 20px auto;
+    padding: 20px;
+    background:black;
+    text-align: center;
+    box-shadow: 0px 0px 5px white;
+}
+
+footer a {
+    margin: 0 15px;
+}
+
+@media only screen
+and (min-width:480px)
+and (max-width:800px)
+{
+    div#wrapper{ width:600px}
+    header { font-size:320%}
+    section { width:408px}
+    aside { width:150px}
+    footer {width:506px}
+}
+@media only screen
+and (min-width:320px)
+and (max-width:480px)
+{
+    div#wrapper{ width:400px}
+    header { font-size:200%}
+    section { width:400px; border:0;margin:0;padding:0;}
+    aside {display:none}
+    footer {width:360px}
+}
+@media only screen
+and (min-width:240px)
+and (max-width:320px)
+{
+    div#wrapper{ width:300px}
+    header { font-size:100%;text-align: center}
+    header span{ display: block}
+    nav { text-align: center}
+    nav a{margin:0 3px}
+    nav a:first-child{margin:0 3px}
+    section { width:400px; border:0;margin:0;padding:0;}
+    aside {display:none}
+    footer {display:none}
+}
