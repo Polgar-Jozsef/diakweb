@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('bg.png') black;
+    background-image:url(../images/lilpeep.jpg);
     font-family: arial;
     font-size: 100%;
     color: white;
